@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="us.nilesh.cgcjhn">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cgcpr_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/cgcpr_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CGCJHN"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.CGCJHN.NoActionBar" />
+        <activity
+            android:name=".auth.AuthVerify"
+            android:exported="false" />
+        <activity
+            android:name=".DetailEntry"
+            android:exported="false" />
+        <activity
+            android:name=".auth.AuthenticationActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.CGCJHN.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

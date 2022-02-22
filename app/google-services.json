@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "281201123697",
+    "firebase_url": "https://cgctc-jhanjeri-default-rtdb.firebaseio.com",
+    "project_id": "cgctc-jhanjeri",
+    "storage_bucket": "cgctc-jhanjeri.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281201123697:android:f23e036fd6788e412d16d0",
+        "android_client_info": {
+          "package_name": "us.nilesh.cgcjhn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281201123697-ad4dect0l3jd3pk47kmqogdkm5h7grci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAarM4ko8f3A53zjVP1Q3PZJKNoQD1vjQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281201123697-ad4dect0l3jd3pk47kmqogdkm5h7grci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

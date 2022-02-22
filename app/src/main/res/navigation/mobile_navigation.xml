@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="us.nilesh.cgcjhn.ui.main.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_homenotice" >
+        <action
+            android:id="@+id/action_nav_home_self"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_event"
+        android:name="us.nilesh.cgcjhn.ui.main.EventRegFragment"
+        android:label="@string/menu_event"
+        tools:layout="@layout/fragment_event" >
+        <action
+            android:id="@+id/action_nav_event_to_nav_web"
+            app:destination="@id/nav_web" />
+        <action
+            android:id="@+id/action_nav_event_self"
+            app:destination="@id/nav_event" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_inquiry"
+        android:name="us.nilesh.cgcjhn.ui.main.InquiryFragment"
+        android:label="@string/menu_inquiry"
+        tools:layout="@layout/fragment_enquiry" />
+    <fragment
+        android:id="@+id/nav_web"
+        android:name="us.nilesh.cgcjhn.ui.ptu.PTUNoticeFragment"
+        android:label="@string/menu_ptu_notice"
+        tools:layout="@layout/fragment_ptunotice"/>
+    <fragment
+        android:id="@+id/nav_exam"
+        android:name="us.nilesh.cgcjhn.ui.ptu.ExamFormFragment"
+        android:label="@string/menu_examform"
+        tools:layout="@layout/fragment_exam" />
+    <fragment
+        android:id="@+id/nav_ptuenquiry"
+        android:name="us.nilesh.cgcjhn.ui.ptu.PTUEnquiryFragment"
+        android:label="@string/menu_ptuenquiry"
+        tools:layout="@layout/fragment_ptu_enquiry" />
+    <fragment
+        android:id="@+id/nav_uploadFragment"
+        android:name="us.nilesh.cgcjhn.ui.utility.UploadFragment"
+        android:label="@string/menu_upload"
+        tools:layout="@layout/fragment_upload" >
+        <action
+            android:id="@+id/action_nav_uploadFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+</navigation>

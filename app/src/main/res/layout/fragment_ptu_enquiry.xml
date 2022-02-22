@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.ptu.PTUEnquiryFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/eight"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginEnd="@dimen/eight"
+        android:background="@color/cgc_blue"
+        android:padding="@dimen/eight"
+        android:text="@string/menu_ptuenquiry"
+        android:textColor="@color/white"
+        android:textSize="@dimen/seventeensp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/eight"
+        android:layout_marginEnd="@dimen/eight"
+        android:layout_marginBottom="@dimen/eight"
+        app:cardBackgroundColor="@color/cgc_blue" >
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/admit_card_view"
+            android:layout_margin="@dimen/five"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

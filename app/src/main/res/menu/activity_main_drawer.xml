@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/add"
+            android:title="@string/menu_event" />
+        <item
+            android:id="@+id/nav_inquiry"
+            android:icon="@drawable/support"
+            android:title="@string/menu_inquiry" />
+    </group>
+    <item android:title="@string/ptu">
+        <menu>
+
+            <item
+                android:id="@+id/nav_web"
+                android:icon="@drawable/global"
+                android:title="@string/menu_ptu_notice" />
+            <item
+                android:id="@+id/nav_exam"
+                android:icon="@drawable/global"
+                android:title="@string/menu_examform" />
+            <item
+                android:id="@+id/nav_ptuenquiry"
+                android:icon="@drawable/global"
+                android:title="@string/menu_ptuenquiry" />
+            <item
+                android:id="@+id/nav_result"
+                android:icon="@drawable/global"
+                android:title="@string/menu_resultndocument" />
+        </menu>
+    </item>
+    <item android:title="@string/utility">
+        <menu>
+            <item
+                android:id="@+id/nav_uploadFragment"
+                android:icon="@drawable/ic_baseline_cloud_upload_24"
+                android:title="@string/menu_upload"/>
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@drawable/account"
+                android:title="@string/menu_account"/>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_baseline_settings_24"
+                android:title="@string/menu_setting"/>
+
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailEntry"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/eight"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginEnd="@dimen/eight"
+        android:background="@color/cgc_blue"
+        android:padding="@dimen/eight"
+        android:text="@string/details"
+        android:textColor="@color/white"
+        android:textSize="@dimen/seventeensp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cgc_blue"
+        android:layout_marginStart="@dimen/eight"
+        android:layout_marginEnd="@dimen/eight"
+        android:layout_marginBottom="@dimen/eight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/eight"
+            android:background="@color/white">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/eight">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/full_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/seventeensp" />
+
+                    <EditText
+                        android:id="@+id/nameET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/cgc_orange"
+                    android:layout_marginStart="@dimen/fiftySix"
+                    android:layout_marginEnd="@dimen/fiftySix"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_marginBottom="@dimen/ten"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/roll_number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/seventeensp" />
+
+                    <EditText
+                        android:id="@+id/rollNumET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/cgc_orange"
+                    android:layout_marginStart="@dimen/fiftySix"
+                    android:layout_marginEnd="@dimen/fiftySix"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_marginBottom="@dimen/ten"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phone_number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/seventeensp" />
+
+                    <EditText
+                        android:id="@+id/phoneNumET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="phone" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/cgc_orange"
+                    android:layout_marginStart="@dimen/fiftySix"
+                    android:layout_marginEnd="@dimen/fiftySix"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_marginBottom="@dimen/ten"/>
+
+            </TableLayout>
+
+            <!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="TextView" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/ET"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ems="10"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:text="Name" />-->
+<!--            </TableRow>-->
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent" >-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="TextView" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/ET"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ems="10"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:text="Name" />-->
+<!--            </TableRow>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
